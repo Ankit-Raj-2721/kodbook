@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>KodBook Edit Profile</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+	</head>
+	<body>
+		
+				<!-- Navigation bar -->
+	    <nav>
+	        <span th:text="${session.username}"></span>
+	        <a href="/goHome"><i class="fas fa-home"></i> News feed</a>
+	        <a href="/openCreatePost"><i class="fas fa-plus-circle"></i> Create post</a>
+	        <a href="/openMyProfile"><i class="fas fa-user-circle"></i> My profile</a>
+	        <a href="/logout"><i class="fas fa-sign-out-alt"></i> LOG OUT</a>
+	    </nav>
+		
+		<hr>
+		<form action="/updateProfile" method="post" enctype="multipart/form-data">
+		
+		<h1>KodBook</h1>
+		<h3>Edit Profile</h3>
+		
+			<label>DOB : </label>
+			<input type = "date" name = "dob">
+			<br><br>	
+			
+			<label>GENDER : </label>
+			<label>M</label><input type = "radio" name = "gender" value = "M">
+			<label>F</label><input type = "radio" name = "gender" value = "F">
+			<label>O</label><input type = "radio" name = "gender" value = "O">
+			<br><br>
+			
+			<label>CITY : </label>
+			<input type = "text" name = "city">
+			<br><br>
+			
+			<label>BIO : </label>
+			<input type = "text" name = "bio">
+			<br><br>
+			
+			<label>COLLEGE : </label>
+			<input type = "text" name = "college">
+			<br><br>
+			
+			<label>LINKEDIN : </label>
+			<input type = "text" name = "linkedIn">
+			<br><br>
+			
+			<label>GIT HUB : </label>
+			<input type = "text" name = "gitHub">
+			<br><br>
+			
+			<input type="file" name="profilePic" accept="image/*" />
+        	<br><br>
+        	<button type="submit" value = "Update Profile">UPDATE</button>
+        	<hr>
+		</form>
+	</body>
+</html>

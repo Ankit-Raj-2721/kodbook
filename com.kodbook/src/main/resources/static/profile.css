@@ -1,0 +1,286 @@
+/* General page styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFD7C4;
+    color: #2A2A2A;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+.username {
+    color: gray;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #7695FF;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #9DBDFF;
+    color: #fff;
+}
+
+/* Posts container */
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Post card */
+.post-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Post Header - Profile picture and Username */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Post Image */
+.post-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Caption */
+.caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Likes */
+.likes {
+    margin-bottom: 10px;
+}
+
+/* Like and Comment form */
+form {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #FF9874;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF9874;
+    opacity: 0.8;
+}
+
+/* Comment form styling */
+.comment-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #7695FF;
+    border-radius: 10px;
+    font-size: 1em;
+    resize: none;
+}
+
+/* Comments section */
+.comments-section {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.comments-section h4 {
+    color: #7695FF;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.comments-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.comments-section ul li {
+    background-color: #9DBDFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #2A2A2A;
+}
+/* Profile Picture Styling */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image fits within the circular container */
+    border: 2px solid #ccc; /* Optional: Adds a border around the profile picture */
+    margin: 0 auto; /* Centers the profile picture horizontally */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Username Styling */
+.username {
+    text-align: center; /* Centers the username */
+    margin-top: 20px; /* Adds some space above the username */
+}
+
+.username h1 {
+    font-size: 24px; /* Adjusts the font size */
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Adds some padding */
+    border: 1px solid #ddd; /* Adds a border around the username */
+    border-radius: 5px; /* Rounds the corners of the border */
+}
+
+/* Profile Info Styling */
+.profile-info {
+    text-align: center; /* Centers the text within the profile info */
+    margin-top: 20px; /* Adds some space above the profile info */
+}
+
+.profile-info ul {
+    list-style-type: none; /* Removes the default list styling */
+    padding: 0; /* Removes the default padding */
+}
+
+.profile-info li {
+    margin: 10px 0; /* Adds some space between each list item */
+    font-size: 16px; /* Adjusts the font size */
+    border: 1px solid #ddd; /* Adds a border around each list item */
+    padding: 10px; /* Adds some padding inside each list item */
+    border-radius: 5px; /* Rounds the corners of the borders */
+}
+
+.profile-info i {
+    margin-right: 10px; /* Adds some space between the icon and the text */
+}
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 20px; /* Adds some space above the social links */
+}
+
+.social-links p {
+    margin: 10px 0; /* Adds some space between each social link */
+    font-size: 16px; /* Adjusts the font size */
+    border: 1px solid #ddd; /* Adds a border around each social link */
+    padding: 10px; /* Adds some padding inside each social link */
+    border-radius: 5px; /* Rounds the corners of the borders */
+}
+
+.social-links i {
+    margin-right: 10px; /* Adds some space between the icon and the text */
+}
+
+.social-links a {
+    color: #0073b1; /* Changes the link color (LinkedIn blue) */
+    text-decoration: none; /* Removes the underline from the links */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+/* Post Creation Styling */
+.post-creation {
+    text-align: center; /* Centers the text within the post creation section */
+    margin-top: 20px; /* Adds some space above the post creation section */
+    padding: 20px; /* Adds some padding inside the post creation section */
+    border-radius: 5px; /* Rounds the corners of the border */
+}
+
+.post-creation h2 {
+    font-size: 24px; /* Adjusts the font size */
+    margin-bottom: 20px; /* Adds some space below the heading */
+}
+
+.post-creation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-creation textarea {
+    width: 80%; /* Adjusts the width of the textarea */
+    height: 100px; /* Adjusts the height of the textarea */
+    padding: 10px; /* Adds some padding inside the textarea */
+    border: 1px solid #ddd; /* Adds a border around the textarea */
+    border-radius: 5px; /* Rounds the corners of the border */
+    margin-bottom: 20px; /* Adds some space below the textarea */
+}
+
+.post-creation input[type="file"] {
+    margin-bottom: 20px; /* Adds some space below the file input */
+}
+
+.post-creation button {
+    padding: 10px 20px; /* Adds some padding inside the button */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    background-color: #0073b1; /* Sets the background color of the button */
+    color: white; /* Sets the text color of the button */
+    font-size: 16px; /* Adjusts the font size */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.post-creation button:hover {
+    background-color: #005f8d; /* Changes the background color on hover */
+}
+
